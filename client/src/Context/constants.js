@@ -1,5 +1,5 @@
 export const apiUrl =
-  process.env.NODE_DEV !== 'production'
+  process.env.NODE_ENV !== 'production'
     ? 'http://localhost:5000/api'
     : 'https://damp-beyond-91391.herokuapp.com/api';
 
