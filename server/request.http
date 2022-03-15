@@ -1,0 +1,49 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username":"minhtri1",
+  "password":"2601"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username":"minhtri1",
+  "password":"2601"
+}
+
+###
+POST http://localhost:5000/api/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4MTJiODllZWE3ODZmNmJiMmUxMjQiLCJpYXQiOjE2NDY4MDAzMzJ9.f6vyTGmvpLQ9snRbQ73gMO7TMLEiX61wChPDOUN2d2g
+
+{
+  "title": "React",
+  "description":"Learn react",  
+  "url":"react.com",
+  "status": "LEARNED"
+}
+
+###
+GET http://localhost:5000/api/posts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4MTJiODllZWE3ODZmNmJiMmUxMjQiLCJpYXQiOjE2NDY5OTAwODJ9.yX-5Jxzj-tp8uGYmQ5CxzDmdYJwnhkfb8SiRJ7LDARE
+
+
+###
+PUT http://localhost:5000/api/posts/622857d41be490a95b67a27d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4MTJiODllZWE3ODZmNmJiMmUxMjQiLCJpYXQiOjE2NDY4MDAzMzJ9.f6vyTGmvpLQ9snRbQ73gMO7TMLEiX61wChPDOUN2d2g
+
+{
+  "title": "React",
+  "description":"Learn react",
+  "url":"react.com",
+  "status": "LEARNED"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/622857d41be490a95b67a27d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI4MTJiODllZWE3ODZmNmJiMmUxMjQiLCJpYXQiOjE2NDY4MDAzMzJ9.f6vyTGmvpLQ9snRbQ73gMO7TMLEiX61wChPDOUN2d2g
